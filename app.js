@@ -154,7 +154,7 @@ function pintarContador(restantes, limite) {
   if (restantes === null || restantes === undefined) { contador.textContent = ''; return; }
   contador.textContent = restantes === 0
     ? 'Bugünkü mesaj hakkınız doldu'
-    : `Bugün: ${limite} mesajdan ${restantes} kaldı`;
+    : `Bugün: ${restantes}/${limite} mesaj`;
   contador.classList.toggle('pocas', restantes <= 2);
   entrada.disabled = restantes === 0;
   entrada.placeholder = restantes === 0 ? 'Yarın devam ediyoruz…' : 'Dr. Aksoy\'a yazın…';
